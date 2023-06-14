@@ -200,7 +200,7 @@ mysqli_close($conn);
               <li class="nav-item">
                 <a class="nav-link" href="service.html">
                   <i class="fa fa-envelope"></i>
-                  <span>demo@gmail.com</span>
+                  <span>info@tautsecure.com</span>
                 </a>
               </li>
             </ul>
