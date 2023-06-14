@@ -1,5 +1,5 @@
 <?php
-include '../config.php';
+include './config.php';
 
 $a = 4;
 
@@ -17,26 +17,31 @@ if (mysqli_num_rows($result) > 0) {
     $description = $row['description'];
     $image = $row['image'];
 
-    // Concatenate the feature box with the fetched data
-    $card = '
-    <div class="col-sm-6 col-lg-4">
-      <div class="feature-box-1">
-      <div class="icon">
-      <img src="./admin/img/'.$image.'" alt="failed" >
-  </div>
-        <div class="feature-content">
-          <h5>'  . $name . '</h5>
-        </div>
-      </div>
-    </div>';
 
-    $cards .= $card; // Append the current card to the cards variable
+    $card = '        <div class="box">
+    <img src="admin/img/'.$image.'" alt="">
+    <h6 style="color:red;background:rgba(255,255,255,0.5);padding:5px 10px;" class="visible_heading">
+ '  . $name . '
+    </h6>
+    <div class="link_box">
+      <a >
+      <!--  <img src="/admin/img/'.$image.'" alt=""> -->
+        <img src="images/link.png" alt="">
+
+      </a>
+      <h6>
+      '  . $name . '
+
+      </h6>
+<p>    '  . $description . '</p>
+    </div>
+  </div>';
+
+    $cards .= $card;
   }
 } else {
-  $cards = 'No services found.'; // Display message if no services found
+  $cards = 'No services found.'; 
 }
-
-// Close the database connection
 mysqli_close($conn);
 ?>
 
@@ -103,7 +108,7 @@ mysqli_close($conn);
               <li class="nav-item">
                 <a class="nav-link" href="service.html">
                   <i class="fa fa-envelope"></i>
-                  <span>demo@gmail.com</span>
+                  <span>info@tautsecure.com</span>
                 </a>
               </li>
             </ul>
@@ -133,7 +138,7 @@ mysqli_close($conn);
                     <a class="nav-link" href="about.html">About </a>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" >Services </a>
+                  <a class="nav-link" href="service.php">Services </a>
                   </li>
                   <li class="nav-item active">
                     <a class="nav-link " href="./projects.php">Projects </a>
@@ -163,7 +168,7 @@ mysqli_close($conn);
         </h2>
       </div>
       <div class="service_container">
-        <div class="box">
+        <!-- <div class="box">
           <img src="images/s-1.jpg" alt="">
           <h6 class="visible_heading">
             CROSSFIT TRAINING
@@ -179,7 +184,8 @@ mysqli_close($conn);
             <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem labore officia velit nostrum laudantium aperiam, aut ad numquam repudiandae nihil similique temporibus adipisci, sint nisi quaerat fugiat atque asperiores.</p>
 
           </div>
-        </div>
+        </div> -->
+        <?php echo $cards?>
 
 
       </div>
