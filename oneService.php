@@ -27,6 +27,7 @@ if (mysqli_num_rows($result) > 0) {
   </div>
         <div class="feature-content">
           <h5>'  . $name . '</h5>
+          <p> '.$description.'</p>
         </div>
       </div>
     </div>';
@@ -93,7 +94,10 @@ mysqli_close($conn);
   -webkit-transition: ease all 0.35s;
   transition: ease all 0.35s;
   top: 0;
-  margin: 10px;
+  width: 70vw;
+  text-align: center;
+  margin-left: 50px;
+
 
 }
 .feature-box-1 * {
@@ -103,8 +107,6 @@ mysqli_close($conn);
   transition: ease all 0.35s;
 }
 .feature-box-1 .icon {
-  width: 70px;
-  height: 70px;
   line-height: 70px;
   /* background: #fc5356; */
   color: #ffffff;
@@ -114,7 +116,7 @@ mysqli_close($conn);
   font-size: 27px;
 }
 .feature-box-1 .icon img{
-  height: 70px;
+  height: 350px;
 }
 .feature-box-1 h5 {
   color: red;
@@ -139,22 +141,7 @@ mysqli_close($conn);
   -webkit-transition: ease all 0.35s;
   transition: ease all 0.35s;
 }
-.feature-box-1:hover {
-  top: -5px;
-}
-.feature-box-1:hover h5 {
-  color: #ffffff;
-}
-.feature-box-1:hover p {
-  color: rgba(255, 255, 255, 0.8);
-}
-.feature-box-1:hover:after {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  left: 0;
-  right: auto;
-}
+
 .section {
     padding: 100px 0;
     position: relative;
@@ -170,6 +157,7 @@ mysqli_close($conn);
     border-left: 5px solid #fc5356;
     padding-left: 15px;
 }
+
 </style> 
   </style>
 </head>
@@ -260,10 +248,7 @@ mysqli_close($conn);
           Our Services
         </h2>
       </div>
-      <div class="service_container">
         <?php echo $cards ?>
-      </div>
-    </div>
   </section>
 
   <!-- end service section -->

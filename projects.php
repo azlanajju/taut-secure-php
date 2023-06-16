@@ -24,11 +24,7 @@ if (mysqli_num_rows($result) > 0) {
  '  . $name . '
     </h6>
     <div class="link_box">
-      <a >
-      <!--  <img src="/admin/img/'.$image.'" alt=""> -->
-        <img src="images/link.png" alt="">
 
-      </a>
       <h6>
       '  . $name . '
 
@@ -79,6 +75,13 @@ mysqli_close($conn);
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .box {
+      max-width: 350px;
+      background: grey;
+
+    }
+  </style>
 </head>
 
 <body class="sub_page">

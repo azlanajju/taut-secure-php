@@ -4,7 +4,7 @@ include './config.php';
 $a = 4;
 
 // Fetch data from the database
-$sql = "SELECT name, description, image FROM services ORDER BY id DESC";
+$sql = "SELECT id,  name, description, image FROM services ORDER BY id DESC";
 $result = mysqli_query($conn, $sql);
 
 // Check if any rows are returned
@@ -13,13 +13,17 @@ if (mysqli_num_rows($result) > 0) {
   
   // Iterate through each row
   while ($row = mysqli_fetch_assoc($result)) {
+    $id = $row['id'];
     $name = $row['name'];
     $description = $row['description'];
     $image = $row['image'];
 
     // Concatenate the feature box with the fetched data
     $card = '
+
     <div class="col-sm-6 col-lg-4">
+    <a href="./oneService.php?id='.$id.'">
+
       <div class="feature-box-1">
       <div class="icon">
       <img src="./admin/img/'.$image.'" alt="failed" >
@@ -28,6 +32,7 @@ if (mysqli_num_rows($result) > 0) {
           <h5>'  . $name . '</h5>
         </div>
       </div>
+      </a>
     </div>';
 
     $cards .= $card; // Append the current card to the cards variable
@@ -44,7 +49,6 @@ mysqli_close($conn);
 
 <!DOCTYPE html>
 <html>
-
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
