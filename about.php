@@ -1,49 +1,3 @@
-<?php
-include './config.php';
-
-$a = 4;
-$id = $_GET['id'];
-
-// Fetch data from the database
-$sql = "SELECT name, description, image FROM services WHERE id = '$id'";
-$result = mysqli_query($conn, $sql);
-
-// Check if any rows are returned
-if (mysqli_num_rows($result) > 0) {
-  $cards = ''; // Initialize the cards variable
-
-  // Iterate through each row
-  while ($row = mysqli_fetch_assoc($result)) {
-    $name = $row['name'];
-    $description = $row['description'];
-    $image = $row['image'];
-
-    // Concatenate the feature box with the fetched data
-    $card = '
-    <div class="col-sm-6 col-lg-4">
-      <div class="feature-box-1">
-      <div class="icon">
-      <img src="./admin/img/' . $image . '" alt="failed" >
-  </div>
-        <div class="feature-content">
-          <h5>'  . $name . '</h5>
-          <p> ' . $description . '</p>
-        </div>
-      </div>
-    </div>';
-
-    $cards .= $card; // Append the current card to the cards variable
-  }
-} else {
-  $cards = 'No services found.'; // Display message if no services found
-}
-
-// Close the database connection
-mysqli_close($conn);
-?>
-
-
-
 <!DOCTYPE html>
 <html>
 
@@ -74,98 +28,9 @@ mysqli_close($conn);
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  <style>
-    /* Feature Box
----------------------*/
-    .feature-box-1 {
-      padding: 32px;
-      box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
-      margin: 15px 0;
-      position: relative;
-      z-index: 1;
-      border-radius: 10px;
-      overflow: hidden;
-      -moz-transition: ease all 0.35s;
-      -o-transition: ease all 0.35s;
-      -webkit-transition: ease all 0.35s;
-      transition: ease all 0.35s;
-      top: 0;
-      width: 70vw;
-      text-align: center;
-      margin-left: 50px;
-
-
-    }
-
-    .feature-box-1 * {
-      -moz-transition: ease all 0.35s;
-      -o-transition: ease all 0.35s;
-      -webkit-transition: ease all 0.35s;
-      transition: ease all 0.35s;
-    }
-
-    .feature-box-1 .icon {
-      line-height: 70px;
-      /* background: #fc5356; */
-      color: #ffffff;
-      text-align: center;
-      border-radius: 50%;
-      margin-bottom: 22px;
-      font-size: 27px;
-    }
-
-    .feature-box-1 .icon img {
-      height: 350px;
-    }
-
-    .feature-box-1 h5 {
-      color: red;
-      font-weight: 600;
-    }
-
-    .feature-box-1 p {
-      margin: 0;
-    }
-
-    .feature-box-1:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: auto;
-      right: 0;
-      border-radius: 10px;
-      width: 0;
-      background: red;
-      z-index: -1;
-      -moz-transition: ease all 0.35s;
-      -o-transition: ease all 0.35s;
-      -webkit-transition: ease all 0.35s;
-      transition: ease all 0.35s;
-    }
-
-    .section {
-      padding: 100px 0;
-      position: relative;
-    }
-
-    .section-title {
-      padding-bottom: 45px;
-    }
-
-    .section-title h2 {
-      font-weight: 700;
-      color: red;
-      font-size: 45px;
-      margin: 0 0 15px;
-      border-left: 5px solid #fc5356;
-      padding-left: 15px;
-    }
-  </style>
-  </style>
 </head>
 
-<body class="sub_page">
+<body class="sub_page about_page">
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -192,7 +57,7 @@ mysqli_close($conn);
               <li class="nav-item">
                 <a class="nav-link" href="service.php">
                   <i class="fa fa-envelope"></i>
-                  <span>demo@gmail.com</span>
+                  <span>info@tautsecure.com</span>
                 </a>
               </li>
             </ul>
@@ -203,7 +68,7 @@ mysqli_close($conn);
     </header>
     <!-- end header section -->
     <!-- slider section -->
-    <section class="slider_section position-relative">
+    <section class=" slider_section position-relative">
       <div class="container">
         <div class="custom_nav2">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -217,11 +82,11 @@ mysqli_close($conn);
                   <li class="nav-item ">
                     <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a class="nav-link" href="about.php">About </a>
                   </li>
-                  <li class="nav-item active">
-                    <a class="nav-link">Services </a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./service.php">Services </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./projects.php">Projects </a>
@@ -241,22 +106,41 @@ mysqli_close($conn);
     <!-- end slider section -->
   </div>
 
-  <!-- service section -->
 
-  <section class="service_section layout_padding">
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <h2>
-          Our Services
+          About Taut Secure
         </h2>
       </div>
-      <?php echo $cards ?>
-  </section>
+      <div class="box">
+        <div class="img-box">
+          <img src="images/taut_logo.png" alt="">
+        </div>
+        <div class="detail-box">
+          <p>
 
-  <!-- end service section -->
+            Protecting what matters the most
+            Taut Secure is a security system company that specializes in providing a range of security products and services to protect individuals and organizations from various security threats.
+
+            <br><br>
+
+            Protecting what matters the most
+            We offer advanced security solutions, including surveillance cameras, access control systems, Conference system burglar alarms, fire alarms, and monitoring services, among others
+            <br><br>
+            We work closely with our clients to assess their security needs and design customized security systems that fit their requirements and budget. With the increasing demand for advanced security solutions, security system companies have become essential in safeguarding properties, assets, and people from potential threats
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
 
   <?php include 'footer.php'; ?>
-
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
