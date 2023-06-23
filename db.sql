@@ -12,6 +12,14 @@ CREATE TABLE projects (
     image VARCHAR(255)
 );
 
+CREATE TABLE testimonials (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    image VARCHAR(255)
+);
+
+
 
 CREATE TABLE `admin` (
   `ad_id` int(100) NOT NULL,

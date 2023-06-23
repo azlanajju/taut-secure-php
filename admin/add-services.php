@@ -1,7 +1,11 @@
 <?php
 $a=3;
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+session_start();
+
+if (!isset($_SESSION['ad_id'])) {
+    header('Location: login.php'); 
+    exit();
+}
 require '../config.php';
 
 if (isset($_POST["submit"])) {

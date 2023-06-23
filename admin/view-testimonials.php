@@ -8,9 +8,8 @@ if (!isset($_SESSION['ad_id'])) {
     header('Location: login.php'); 
     exit();
 }
-
 // Fetch data from the database
-$sql = "SELECT id, name, description, image FROM services ORDER BY id DESC";
+$sql = "SELECT id, name, description, image FROM testimonials ORDER BY id DESC";
 $result = mysqli_query($conn, $sql);
 
 // Check if any rows are returned

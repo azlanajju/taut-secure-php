@@ -1,4 +1,13 @@
 
+<?php 
+
+session_start();
+
+if (!isset($_SESSION['ad_id'])) {
+    header('Location: login.php'); 
+    exit();
+}
+?>
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">

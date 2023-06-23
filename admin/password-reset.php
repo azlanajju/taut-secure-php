@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['ad_id'])) {
+    header('Location: login.php'); 
+    exit();
+}
 include('conn.php');
 $m = $_GET['m'];
 if(isset($_POST['submit'])){

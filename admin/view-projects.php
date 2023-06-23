@@ -2,7 +2,12 @@
 include '../config.php';
 
 $a = 62;
+session_start();
 
+if (!isset($_SESSION['ad_id'])) {
+    header('Location: login.php'); 
+    exit();
+}
 // Fetch data from the database
 $sql = "SELECT id,  name, description, image FROM projects ORDER BY id DESC";
 $result = mysqli_query($conn, $sql);

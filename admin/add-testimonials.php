@@ -32,7 +32,7 @@ if (isset($_POST["submit"])) {
             $newImageName .= '.' . $imageExtension;
 
             if (move_uploaded_file($tmpName, 'img/' . $newImageName)) {
-                $stmt = mysqli_prepare($conn, "INSERT INTO projects (name, description, image) VALUES (?, ?, ?)");
+                $stmt = mysqli_prepare($conn, "INSERT INTO testimonials (name, description, image) VALUES (?, ?, ?)");
                 mysqli_stmt_bind_param($stmt, "sss", $name, $description, $newImageName);
 
                 if (mysqli_stmt_execute($stmt)) {
