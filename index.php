@@ -256,7 +256,7 @@
       </div>
       <div class="box">
         <div class="img-box">
-          <img src="images/taut_logo.png" alt="">
+          <img src="images/tautsecurelogo.png" alt="">
         </div>
         <div class="detail-box">
           <p>
