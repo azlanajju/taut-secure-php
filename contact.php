@@ -121,18 +121,18 @@
       <div class="layout_padding2-top">
         <div class="row">
           <div class="col-md-6 ">
-            <form action="https://formsubmit.co/alirifaz21@gmail.com" method="POST">
+            <form action="mail.php" method="POST">
               <div class="contact_form-container">
                 <div>
                   <div>
                     <input type="text" name="name" placeholder="Name" />
                   </div>
-                  <div>
+                  <!-- <div>
                     <input type="hidden" name="_next" value="http://localhost/taut-secure-php/contact.php">
                   </div>
                   <div>
                     <input type="hidden" name="_captcha" value="false">
-                  </div>
+                  </div> -->
                   <div>
                     <input type="email" name="email" placeholder="Email" />
                   </div>
