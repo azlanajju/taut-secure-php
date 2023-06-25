@@ -138,7 +138,8 @@ mysqli_close($conn);
       right: 0;
       border-radius: 10px;
       width: 0;
-      background: red;
+      /* background: linear-gradient(to right, red, white); */
+      background: linear-gradient(to right, rgba(255, 0, 0, 0.2), red);
       z-index: -1;
       -moz-transition: ease all 0.35s;
       -o-transition: ease all 0.35s;

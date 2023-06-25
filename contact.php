@@ -17,15 +17,13 @@
   <title>Taut Secure</title>
 
   <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
@@ -76,8 +74,7 @@
       <div class="container">
         <div class="custom_nav2">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -124,20 +121,26 @@
       <div class="layout_padding2-top">
         <div class="row">
           <div class="col-md-6 ">
-            <form action="">
+            <form action="https://formsubmit.co/alirifaz21@gmail.com" method="POST">
               <div class="contact_form-container">
                 <div>
                   <div>
-                    <input type="text" placeholder="Name" />
+                    <input type="text" name="name" placeholder="Name" />
                   </div>
                   <div>
-                    <input type="email" placeholder="Email" />
+                    <input type="hidden" name="_next" value="http://localhost/taut-secure-php/contact.php">
                   </div>
                   <div>
-                    <input type="text" placeholder="Phone Number" />
+                    <input type="hidden" name="_captcha" value="false">
+                  </div>
+                  <div>
+                    <input type="email" name="email" placeholder="Email" />
+                  </div>
+                  <div>
+                    <input type="text" name="phone" placeholder="Phone Number" />
                   </div>
                   <div class="mt-5">
-                    <input type="text" placeholder="Message" />
+                    <input type="text" name="message" placeholder="Message" />
                   </div>
                   <div class="mt-5">
                     <button type="submit">
@@ -151,10 +154,7 @@
           <div class="col-md-6">
             <div class="map_container">
               <div class="map-responsive">
-                <iframe
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
-                  width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
-                  allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
               </div>
             </div>
           </div>

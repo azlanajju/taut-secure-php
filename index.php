@@ -360,7 +360,7 @@
             </h5>
             <p>
               To create a safer world by providing innovative and reliable security solutions that empower individuals
-              and organizations to protect what matters most." </p>
+              and organizations to protect what matters most. </p>
           </div>
         </div>
 
@@ -373,7 +373,7 @@
 
   <!-- client section -->
 
-  <section class="client_section layout_padding">
+  <!-- <section class="client_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -393,6 +393,7 @@
                 <img src="images/client.png" alt="">
               </div>
               <div class="detail-box">
+                <i class="fas fa-user fa-2x"></i>
                 <h5>
                   Fahad muhammed, <br>
                   <div class=" address">
@@ -415,6 +416,7 @@
                 <img src="images/client.png" alt="">
               </div>
               <div class="detail-box">
+                <i class="fas fa-user fa-2x"></i>
                 <h5>
                   Fairoz,
                   <div class="address">
@@ -434,6 +436,7 @@
                 <img src="images/client.png" alt="">
               </div>
               <div class="detail-box">
+                <i class="fas fa-user fa-2x"></i>
                 <h5>
                   Bilal Ahmed,
                   <div class="address">
@@ -453,9 +456,145 @@
       </div>
 
     </div>
+  </section> -->
+
+
+  <style>
+    .home-testimonial {
+      background-color: #f8f8f8;
+      height: 380px
+    }
+
+    .home-testimonial-bottom {
+      background-color: #f8f8f8;
+      transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      position: relative;
+      height: 130px;
+      top: 190px
+    }
+
+    .home-testimonial h3 {
+      color: var(--orange);
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase
+    }
+
+    .home-testimonial h2 {
+      color: black;
+      font-size: 28px;
+      font-weight: 700
+    }
+
+    .testimonial-inner {
+      position: relative;
+      top: -174px
+    }
+
+    .testimonial-pos {
+      position: relative;
+      top: 24px
+    }
+
+    .testimonial-inner .tour-desc {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      background: white;
+      /* border: 1px solid red; */
+      border-radius: 10px;
+      padding: 40px
+    }
+
+    .color-grey-3 {
+      font-family: "Montserrat", Sans-serif;
+      font-size: 14px;
+      color: #6c83a2
+    }
+
+    .testimonial-inner img.tm-people {
+      width: 60px;
+      height: 60px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      max-width: none
+    }
+
+    .link-name {
+      font-family: "Montserrat", Sans-serif;
+      font-size: 14px;
+      color: black;
+    }
+
+    .link-position {
+      font-family: "Montserrat", Sans-serif;
+      font-size: 12px;
+      color: black;
+    }
+  </style>
+
+  <section class="home-testimonial">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center testimonial-pos">
+        <div class="heading_container">
+          <h2>
+            What Says Our Customers
+          </h2>
+        </div>
+      </div>
+      <section class="home-testimonial-bottom">
+        <div class="container testimonial-inner">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-4 style-3">
+              <div class="tour-item ">
+                <div class="tour-desc">
+                  <div class="tour-text color-white text-center">&ldquo;Outstanding service, well-made products and expert installation.
+                    Seamless installation, skilled expert, excellent service, and impeccable product quality.&rdquo;</div>
+                  <div class="d-flex justify-content-center pt-2 pb-2"><i class="fas fa-user fa-2x"></i></div>
+                  <div class="link-name d-flex justify-content-center font-weight-bold">Fahad muhammed</div>
+                  <div class="link-position d-flex justify-content-center">Kasaragod ( On Smart home automation for Residential projects)</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 style-3">
+              <div class="tour-item ">
+                <div class="tour-desc ">
+                  <div class="tour-text color-white text-center">&ldquo;Taut Secure went above and beyond to deliver exceptional service, exceeding my expectations. I am extremely satisfied with their outstanding performance!&rdquo;</div>
+                  <div class="d-flex justify-content-center pt-2 pb-2">
+                    <!-- <img class="tm-people" src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg" alt=""> -->
+                    <i class="fas fa-user fa-2x"></i>
+                  </div>
+                  <div class="link-name d-flex justify-content-center font-weight-bold">Fairoz</div>
+                  <div class="link-position d-flex justify-content-center">Bangalore (Aspirants Hub)</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 style-3">
+              <div class="tour-item ">
+                <div class="tour-desc">
+                  <div class="tour-text color-white text-center">&ldquo;Great feeling to have made the right choice selecting Taut Secure Security Professionals for security
+                    system activated. I highly recommend.&rdquo;</div>
+                  <div class="d-flex justify-content-center pt-2 pb-2"><i class="fas fa-user fa-2x"></i></div>
+                  <div class="link-name d-flex justify-content-center font-weight-bold">Avinash</div>
+                  <div class="link-position d-flex justify-content-center">Bangalore (Study nest)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
   </section>
 
+
   <!-- end client section -->
+
+
+
+
+
+
+
 
   <!-- result section -->
 

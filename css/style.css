@@ -569,11 +569,14 @@ ul li {
   justify-content: center;
 }
 
+
 .us_section .us_container .box .img-box img {
   max-width: 100%;
 }
 
-.us_section .us_container .box .detail-box h5 {
+.us_section .us_container .box .detail-box p,
+h5 {
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -925,6 +928,7 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
   margin: 45px auto 15px auto;
 }
 
