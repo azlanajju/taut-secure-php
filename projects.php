@@ -125,7 +125,7 @@ mysqli_close($conn);
               <li class="nav-item">
                 <a class="nav-link" href="service.php">
                   <i class="fa fa-phone"></i>
-                  <span>Call : + 91 7331836586</span>
+                  <span>Call : + 91 7337836586</span>
                 </a>
               </li>
               <li class="nav-item">
