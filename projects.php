@@ -4,7 +4,7 @@ include './config.php';
 $a = 4;
 
 // Fetch data from the database
-$sql = "SELECT name, description, image FROM projects ORDER BY id DESC";
+$sql = "SELECT  id, name, description, image FROM projects ORDER BY id DESC";
 $result = mysqli_query($conn, $sql);
 
 // Check if any rows are returned
@@ -13,6 +13,7 @@ if (mysqli_num_rows($result) > 0) {
 
   // Iterate through each row
   while ($row = mysqli_fetch_assoc($result)) {
+    $id = $row['id'];
     $name = $row['name'];
     $description = $row['description'];
     $image = $row['image'];
@@ -20,15 +21,18 @@ if (mysqli_num_rows($result) > 0) {
 
     $card = '        <div class="box">
     <img src="admin/img/' . $image . '" alt="">
-    <h6 style="color:red;background:rgba(2,255,255,0.5);padding:5px 10px;" class="visible_heading">
+    <h6 class="visible_heading">
  '  . $name . '
     </h6>
     <div class="link_box">
+    <a href="./oneProject.php?id=' . $id . '">
 
-      <h6>
-      '  . $name . '
+    <h6>
+    '  . $name . '
 
-      </h6>
+    </h6>
+  </a>
+
     </div>
   </div>';
 
@@ -78,6 +82,25 @@ mysqli_close($conn);
       background: grey;
 
     }
+
+    .service_section .service_container .box img {
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+      border: 1px solid red;
+
+
+    }
+
+    .service_section .service_container .box h6 {
+      color: red;
+      background: white;
+      padding: 0px 5px;
+      border-radius: 3px;
+    }
+
+
   </style>
 </head>
 
