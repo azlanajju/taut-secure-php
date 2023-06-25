@@ -172,7 +172,7 @@ mysqli_close($conn);
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.php">
-            <img src="images/taut_logo.png" alt="" />
+            <img src="images/tautsecurelogo.png" alt="" />
 
           </a>
           <div class="contact_nav" id="">
