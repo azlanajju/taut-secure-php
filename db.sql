@@ -29,4 +29,4 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `admin` (`ad_id`, `ad_name`, `ad_email`, `ad_password`) VALUES
-(1, 'admin', 'admin@gmail.com', 'pass');
+(1, 'admin', 'admin@gmail.com', 'admin');

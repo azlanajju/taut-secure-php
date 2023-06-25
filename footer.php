@@ -33,19 +33,16 @@
                   </h6>
                   <ul>
                       <li class=" active">
-                          <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                          <a class="" href="index.php">Home <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="">
-                          <a class="" href="about.html">About </a>
+                          <a class="" href="about.php">About </a>
                       </li>
                       <li class="">
-                          <a class="" href="service.html">Services </a>
+                          <a class="" href="service.php">Services </a>
                       </li>
                       <li class="">
-                          <a class="" href="#contactSection">Contact Us</a>
-                      </li>
-                      <li class="">
-                          <a class="" href="#">Login</a>
+                          <a class="" href="contact.php">Contact Us</a>
                       </li>
                   </ul>
               </div>
@@ -92,11 +89,11 @@
                       </a>
                       <a href="">
                           <img src="images/call-white.png" alt="">
-                          <span>+01 12345678901</span>
+                          <span>+91 7337836586</span>
                       </a>
                       <a href="">
                           <img src="images/mail-white.png" alt="">
-                          <span> demo123@gmail.com</span>
+                          <span> info@tautsecure.com</span>
                       </a>
                   </div>
                   <div class="info_social">

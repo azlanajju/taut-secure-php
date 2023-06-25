@@ -138,7 +138,7 @@ mysqli_close($conn);
       right: 0;
       border-radius: 10px;
       width: 0;
-      background: rgba(255, 0, 0, 0.281);
+      background: red;
       z-index: -1;
       -moz-transition: ease all 0.35s;
       -o-transition: ease all 0.35s;
