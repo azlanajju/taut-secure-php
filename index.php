@@ -73,7 +73,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.php">
-            <img src="images/taut_logo.png" alt="" />
+            <img src="images/tautsecurelogo.png" alt="" />
 
           </a>
           <div class="contact_nav" id="">
@@ -253,7 +253,7 @@
       </div>
       <div class="box">
         <div class="img-box">
-          <img src="images/taut_logo.png" alt="">
+          <img src="images/tautsecurelogo.png" alt="">
         </div>
         <div class="detail-box">
           <p>
