@@ -102,6 +102,8 @@ mysqli_close($conn);
 
 
   </style>
+    <link rel="icon" type="image/png" href="./images/iconico.ico">
+
 </head>
 
 <body class="sub_page">

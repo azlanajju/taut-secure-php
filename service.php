@@ -184,7 +184,7 @@ mysqli_close($conn);
       padding-left: 15px;
     }
   </style>
-  </style>
+  <link rel="icon" type="image/png" href="./images/iconico.ico">
 </head>
 
 <body class="sub_page">

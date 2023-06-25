@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="/Taut.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Taut Secure</title>
+  <link rel="icon" type="image/png" href="./images/iconico.ico">
+  
+
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+<style>
+    *{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #000;
+  padding: 20px;
+  width: 100vw;
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+main {
+  text-align: center;
+  margin: 50px;
+  
+}
+
+h1 {
+  font-size: 32px;
+  
+  font-family: 'Roboto Condensed', sans-serif;
+  color: red;
+}
+.services{
+  
+  text-align:left;
+  width: 100vw;
+  display: none;
+}
+p {
+  font-size: 18px;
+  text-align:center;
+}
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  width: 100vw;
+}
+
+footer p{
+ 
+  font-size: 16px; 
+}
+
+
+
+
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+}
+h3{
+  margin-left: 30px;
+}
+
+main {
+  text-align: center;
+  margin: 50px;
+}
+
+.contact-form {
+  display: inline-block;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width:95vw;
+  margin-bottom:60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 100px;
+
+  
+  
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  min-width: 80vw;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.space{
+  height: 30px;
+}
+@media (min-width: 768px) {
+    .contact-form {
+        width: 70vw;
+    }
+    .form-group{
+        width: 65vw;
+    }
+    .services{
+   display: none;
+    }
+    p{
+width: 50vw;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+    }
+    main{
+        text-align: center;
+        width: 100vw;
+
+    }
+}
+
+</style></head>
+
+  
+<body>
+  <header>
+    <div class="logo">
+      <img src="/images/taut_logo.png" alt="Company Logo">
+    </div>
+  </header>
+
+  <main>
+    <h1>TAUT SECURE</h1>
+<p>The company is a leading provider of security and technology solutions, offering services such as CCTV, access control, home automation, and more. They specialize in delivering innovative solutions to ensure safety and efficiency for their clients.</p>    <div class="services">
+        <h3>OUR SERVICES</h3>
+        <ul >
+            <li>- CCTV</li>
+            <li>- Access control & Biometric System</li>
+            <li>- Home Automation</li>
+            <li>- Conference system</li>
+            <li>- Smart class system</li>
+            <li>- Intrusion Alarm system</li>
+            <li>- Public Alarm system</li>
+            <li>- Nurse calling system</li>
+            <li>- Disabled alarm system</li>
+            <li>- Gate barrier system</li>
+            <li>- Bollard system</li>
+            <li>- Audio video intercom</li>
+            <li>- IP Telephone</li>
+            <li>- LAN & Wi-Fi services</li>
+            <li>- Fire alarm system</li>
+            <li>- UPS</li>
+            <li>- Other IT Services</li>
+        </ul>
+</div>
+
+    <a href="#bottom">Contact us</a>
+  </main>
+
+ 
+    <form  method="post" action="https://formspree.io/f/mrgvwozz" class="contact-form">
+      <div class="space">
+        
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input  placeholder="Name" type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input placeholder="Email" type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea placeholder="Type your message" id="message" name="message" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  
+
+ <div id="bottom"></div>
+  <footer>
+    <p>&copy; 2023 Taut Secure. All rights reserved.</p>
+    <p> <i class="fa fa-phone"></i> : +91 7259503986</p>
+    <p><i class="fa fa-phone"></i> : +91 9731766586</p>
+  </footer>
+
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>

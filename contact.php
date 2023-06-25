@@ -30,6 +30,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./images/iconico.ico">
+
 </head>
 
 <body class="sub_page">
