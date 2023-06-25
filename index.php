@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <?php
-$file = 'css/style.css';
-$permissions = 0644; // Set the desired permissions
+// $file = 'css/style.css';
+// $permissions = 0644; // Set the desired permissions
 
-if (chmod($file, $permissions)) {
-  echo "Permissions updated successfully!";
-} else {
-  echo "Failed to update permissions.";
-}
+// if (chmod($file, $permissions)) {
+//   echo "Permissions updated successfully!";
+// } else {
+//   echo "Failed to update permissions.";
+// }
 ?>
 
 <head>
@@ -23,17 +23,49 @@ if (chmod($file, $permissions)) {
   <title>Taut Secure</title>
 
   <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .address {
+      font-weight: normal;
+      font-size: 15px;
+    }
+
+    .service_section .service_container .box img {
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+      border: 1px solid red;
+
+
+    }
+
+    .service_section .service_container .box h6 {
+      color: red;
+      background: white;
+      padding: 0px 5px;
+      border-radius: 3px;
+    }
+
+    .readmore-btn a {
+      background: red;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 3px;
+    }
+  </style>
 </head>
 
 <body>
@@ -79,7 +111,8 @@ if (chmod($file, $permissions)) {
       <div class="container">
         <div class="custom_nav2">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -227,23 +260,11 @@ if (chmod($file, $permissions)) {
         </div>
         <div class="detail-box">
           <p>
-          <ul>
-            <li>Taut Secure is a security system company that
+          Taut Secure is a security system company that
               specializes in providing a range of security
               products and services to protect individuals and
-              organizations from various security threats.</li>
-            <li>We offer advanced security solutions, including
-              surveillance cameras, access control systems,
-              Conference system burglar alarms, fire alarms, and
-              monitoring services, among others.</li>
-            <li> We work closely with our clients to assess their
-              security needs and design customized security
-              systems that fit their requirements and budget.
-              With the increasing demand for advanced security
-              solutions, security system companies have become
-              essential in safeguarding properties, assets, and
-              people from potential threats</li>
-          </ul>
+              organizations from various security threats.
+        
           </p>
           <a href="./about.php">
             Read More
@@ -265,89 +286,55 @@ if (chmod($file, $permissions)) {
       </div>
       <div class="service_container">
         <div class="box">
-          <img src="images/s-1.jpg" alt="">
+          <img src="./images/smart-class.jpeg" alt="">
           <h6 class="visible_heading">
-            CROSSFIT TRAINING
-          </h6>
+            Smart Class System </h6>
           <div class="link_box">
-            <a href="">
-              <img src="images/link.png" alt="">
-            </a>
             <h6>
-              CROSSFIT TRAINING
+              Smart Class System
             </h6>
           </div>
         </div>
         <div class="box">
-          <img src="images/s-2.jpg" alt="">
+          <img src="images/gps-tracking.jpeg" alt="">
           <h6 class="visible_heading">
-            FITNESS
+            GPS Tracking System
           </h6>
           <div class="link_box">
-            <a href="">
-              <img src="images/link.png" alt="">
-            </a>
             <h6>
-              FITNESS
+              GPS Tracking System
             </h6>
           </div>
         </div>
         <div class="box">
-          <img src="images/s-3.jpg" alt="">
+          <img src="images/cctv.png" alt="">
           <h6 class="visible_heading">
-            DYNAMIC STRENGTH TRAINING
+            CCTV Services
           </h6>
           <div class="link_box">
-            <a href="">
-              <img src="images/link.png" alt="">
-            </a>
             <h6>
-              DYNAMIC STRENGTH TRAINING
+              CCTV Services
             </h6>
           </div>
         </div>
         <div class="box">
-          <img src="images/s-4.jpg" alt="">
+          <img src="images/intrusion-alarm.jpeg" alt="">
           <h6 class="visible_heading">
-            HEALTH
-          </h6>
+            Intrusion Alarm System </h6>
           <div class="link_box">
-            <a href="">
-              <img src="images/link.png" alt="">
-            </a>
+
             <h6>
-              HEALTH
-            </h6>
+              Intrusion Alarm System </h6>
           </div>
         </div>
-        <div class="box">
-          <img src="images/s-5.jpg" alt="">
-          <h6 class="visible_heading">
-            WORKOUT
-          </h6>
-          <div class="link_box">
-            <a href="">
-              <img src="images/link.png" alt="">
-            </a>
-            <h6>
-              WORKOUT
-            </h6>
-          </div>
+        <div class="readmore-btn">
+        <div style="height:20px"></div>
+
+          <a href="./service.php">
+            Load More
+          </a>
         </div>
-        <div class="box">
-          <img src="images/s-6.jpg" alt="">
-          <h6 class="visible_heading">
-            STRATEGIES
-          </h6>
-          <div class="link_box">
-            <a href="">
-              <img src="images/link.png" alt="">
-            </a>
-            <h6>
-              STRATEGIES
-            </h6>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -367,7 +354,7 @@ if (chmod($file, $permissions)) {
       <div class="us_container">
         <div class="box">
           <div class="img-box">
-            <img src="images/u-1.png" alt="">
+            <img style="margin-top:-50px;" src="./images/vision.png" alt="">
           </div>
           <div class="detail-box">
             <h5>
@@ -409,11 +396,17 @@ if (chmod($file, $permissions)) {
               </div>
               <div class="detail-box">
                 <h5>
-                  Consectetur
+                  Fahad muhammed, <br>
+                  <div class=" address">
+                    <p>
+                      Kasaragod ( On Smart home automation for Residential projects)
+                    </p>
+                  </div>
                 </h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  The service was outstanding, the products appeared to be well-made, and the installation was handled
+                  by a competent and skilled expert. The installation itself was simple and did not obtrude on the
+                  aesthetics. For your home, I whole heartedly suggest Taut Secure.
                 </p>
               </div>
             </div>
@@ -425,11 +418,14 @@ if (chmod($file, $permissions)) {
               </div>
               <div class="detail-box">
                 <h5>
-                  Consectetur
+                  Fairoz,
+                  <div class="address">
+                    <p>Bangalore (Aspirants Hub) </p>
+                  </div>
                 </h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  Taut secure exceeded my expectations with their services. Highly satisfied !
+
                 </p>
               </div>
             </div>
@@ -441,11 +437,16 @@ if (chmod($file, $permissions)) {
               </div>
               <div class="detail-box">
                 <h5>
-                  Consectetur
+                  Bilal Ahmed,
+                  <div class="address">
+                    <p>
+                      Bangalore (Study nest)
+                    </p>
+                  </div>
                 </h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  Great feeling to have made the right choice selecting Taut Secure Security Professionals for security
+                  system activated. I highly recommend.
                 </p>
               </div>
             </div>
@@ -531,7 +532,10 @@ if (chmod($file, $permissions)) {
           <div class="col-md-6">
             <div class="map_container">
               <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124103.17331323466!2d74.8531526!3d12.9107676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827bbc7a74fcfe64!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1623168891846!5m2!1sen!2sin" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124103.17331323466!2d74.8531526!3d12.9107676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827bbc7a74fcfe64!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1623168891846!5m2!1sen!2sin"
+                  width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
+                  allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -557,7 +561,7 @@ if (chmod($file, $permissions)) {
     }
   </script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       var carousel = document.querySelector("#carouselExampleIndicators");
 
       var carouselOptions = {

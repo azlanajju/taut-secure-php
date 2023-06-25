@@ -485,6 +485,7 @@ ul li {
 
 .service_section .service_container .box .link_box a img {
   width: 20px;
+
 }
 
 .service_section .service_container .box .link_box a:hover {
@@ -510,10 +511,14 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  
 }
 
 .service_section .service_container .box:hover::before {
   display: block;
+  background: rgba(255, 0, 0, 0.281);
+  border-radius: 10px;
+
 }
 
 .service_section .service_container .box:hover .visible_heading {
