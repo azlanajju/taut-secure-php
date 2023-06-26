@@ -373,7 +373,7 @@
 
   <!-- client section -->
 
-  <!-- <section class="client_section layout_padding">
+  <section class="client_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -456,10 +456,10 @@
       </div>
 
     </div>
-  </section> -->
+  </section>
 
 
-  <style>
+  <!-- <style>
     .home-testimonial {
       background-color: #f8f8f8;
       height: 380px
@@ -533,8 +533,8 @@
       font-size: 12px;
       color: black;
     }
-  </style>
-
+  </style> -->
+<!-- 
   <section class="home-testimonial">
     <div class="container-fluid">
       <div class="row d-flex justify-content-center testimonial-pos">
@@ -563,7 +563,7 @@
                 <div class="tour-desc ">
                   <div class="tour-text color-white text-center">&ldquo;Taut Secure went above and beyond to deliver exceptional service, exceeding my expectations. I am extremely satisfied with their outstanding performance!&rdquo;</div>
                   <div class="d-flex justify-content-center pt-2 pb-2">
-                    <!-- <img class="tm-people" src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg" alt=""> -->
+                  <img class="tm-people" src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg" alt=""> 
                     <i class="fas fa-user fa-2x"></i>
                   </div>
                   <div class="link-name d-flex justify-content-center font-weight-bold">Fairoz</div>
@@ -584,49 +584,13 @@
             </div>
           </div>
       </section>
-  </section>
+  </section> -->
 
 
   <!-- end client section -->
 
 
 
-
-
-
-
-
-  <!-- result section -->
-
-  <!-- <section class="result_section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 px-0">
-          <div class="img-box">
-            <img src="images/result-img.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-5">
-          <div class="detail-box">
-            <h2>
-              BUILT TO BRING <br>
-              BEST RESULTS
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            </p>
-            <a href="">
-              Get A Quote
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- end result section -->
 
 
   <!-- contact section -->
