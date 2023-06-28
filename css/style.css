@@ -1,18 +1,18 @@
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   background-color: white;
-  width: 9px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: red;
   border-radius: 5px;
-}
+} */
 
 body {
   font-family: "Poppins", sans-serif;
   color: #040000;
   background-color: #ffffff;
-  /* overflow-y: hidden; */
+  overflow-x: hidden;
 }
 
 .layout_padding {

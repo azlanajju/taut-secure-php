@@ -1,0 +1,103 @@
+
+  <style>
+    .client-comments {
+      display: flex;
+      align-items: flex-start;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent; 
+    }
+    .client-comments::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #f0f0f0;
+  }
+
+  /* Customize scrollbar thumb */
+  .client-comments::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-radius: 0.25rem;
+  }
+
+    .comment {
+      position: relative;
+      width: 400px;
+      padding: 20px;
+      background-color: #e4e2e2;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      min-width: 33.3vw;
+      height: 170px;
+    }
+
+    .comment::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -15px;
+      border-top: 20px solid transparent;
+      border-right: 20px solid #e4e2e2;
+    }
+
+    .comment .name {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .comment .message {
+      font-style: italic;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .comment{
+            min-width: 80vw;
+        }
+    }
+  </style>
+
+  <div class="client-comments">
+    <div class="comment">
+      <div class="name">Bilal Ahmed,
+      </div>
+      <div class="message">Taut secure exceeded my expectations with their services. Highly satisfied !
+
+      </div>
+    </div>
+    <div class="comment">
+      <div class="name">Fahad muhammed,
+      </div>
+      <div class="message">The service was outstanding, the products appeared to be well-made, and the installation was handled by a competent and skilled expert. </div>
+    </div>
+    <div class="comment">
+      <div class="name">Fairoz,
+      </div>
+      <div class="message">
+        Great feeling to have made the right choice selecting Taut Secure Security Professionals for security system activated. I highly recommend.</div>
+    </div>
+    
+    <div class="comment">
+      <div class="name">Ahmed Hassan,
+      </div>
+      <div class="message">I couldn't be happier with the level of professionalism displayed by Taut Secure. Their expertise and attention to detail made me feel confident in my choice. Highly recommend their services!
+    
+      </div>
+    </div>
+    <div class="comment">
+      <div class="name">Sara Malik,
+      </div>
+      <div class="message">
+        As a customer of Taut Secure, I can confidently say that their commitment to delivering top-notch security solutions is unparalleled. They exceeded my expectations in every way. Thank you for keeping us safe and secure!</div>
+    </div>
+    
+    
+    
+    
+    
+    
+
+  </div>
+

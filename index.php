@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html>
-<?php
-// $file = 'css/style.css';
-// $permissions = 0644; // Set the desired permissions
-
-// if (chmod($file, $permissions)) {
-//   echo "Permissions updated successfully!";
-// } else {
-//   echo "Failed to update permissions.";
-// }
-?>
 
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,46 +13,22 @@
   <title>Taut Secure</title>
 
   <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./newStyle.css">
   <style>
-    .address {
-      font-weight: normal;
-      font-size: 15px;
-    }
 
-    .service_section .service_container .box img {
-      height: 300px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
-      border: 1px solid red;
-
-
-    }
-
-    .service_section .service_container .box h6 {
-      color: red;
-      background: white;
-      padding: 0px 5px;
-      border-radius: 3px;
-    }
-
-    .readmore-btn a {
-      background: red;
-      padding: 10px 20px;
-      color: white;
-      border-radius: 3px;
-    }
   </style>
 </head>
 
@@ -81,7 +47,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="service.php">
                   <i class="fa fa-map-marker"></i>
-                  <span> Mangalore </span>
+                  <span>Bangalore | Mangalore | Kasaragod</span>
                 </a>
               </li>
               <li class="nav-item">
@@ -109,7 +75,8 @@
       <div class="container">
         <div class="custom_nav2">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -164,10 +131,10 @@
                         products and services to protect individuals and organizations from various security threats.
                       </p>
                       <div class="btn-box">
-                        <a href="" class="btn-1">
+                        <a href="./about.php" class="btn-1">
                           Read More
                         </a>
-                        <a href="" class="btn-2">
+                        <a href="./contact.php" class="btn-2">
                           Get A Quote
                         </a>
                       </div>
@@ -192,10 +159,10 @@
                         Conference system burglar alarms, fire alarms, and monitoring services, among others
                       </p>
                       <div class="btn-box">
-                        <a href="" class="btn-1">
+                        <a href="about.php" class="btn-1">
                           Read More
                         </a>
-                        <a href="" class="btn-2">
+                        <a href="contact.php" class="btn-2">
                           Get A Quote
                         </a>
                       </div>
@@ -222,10 +189,10 @@
                         and people from potential threats
                       </p>
                       <div class="btn-box">
-                        <a href="" class="btn-1">
+                        <a href="about.php" class="btn-1">
                           Read More
                         </a>
-                        <a href="" class="btn-2">
+                        <a href="contact.php" class="btn-2">
                           Get A Quote
                         </a>
                       </div>
@@ -244,7 +211,7 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding">
+  <section class="about_section ">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -276,64 +243,16 @@
   <!-- service section -->
 
   <section class="service_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Our Services
-        </h2>
-      </div>
-      <div class="service_container">
-        <div class="box">
-          <img src="./images/smart-class.jpeg" alt="">
-          <h6 class="visible_heading">
-            Smart Class System </h6>
-          <div class="link_box">
-            <h6>
-              Smart Class System
-            </h6>
-          </div>
-        </div>
-        <div class="box">
-          <img src="images/gps-tracking.jpeg" alt="">
-          <h6 class="visible_heading">
-            GPS Tracking System
-          </h6>
-          <div class="link_box">
-            <h6>
-              GPS Tracking System
-            </h6>
-          </div>
-        </div>
-        <div class="box">
-          <img src="images/cctv.png" alt="">
-          <h6 class="visible_heading">
-            CCTV Services
-          </h6>
-          <div class="link_box">
-            <h6>
-              CCTV Services
-            </h6>
-          </div>
-        </div>
-        <div class="box">
-          <img src="images/intrusion-alarm.jpeg" alt="">
-          <h6 class="visible_heading">
-            Intrusion Alarm System </h6>
-          <div class="link_box">
-
-            <h6>
-              Intrusion Alarm System </h6>
-          </div>
-        </div>
-        <div class="readmore-btn">
-          <div style="height:20px"></div>
-
-          <a href="./service.php">
-            Load More
-          </a>
-        </div>
-
-      </div>
+    <div class="heading_container">
+      <h2>
+        Our Services
+      </h2>
+    </div>
+    <?php include('./components/service.html'); ?>
+    <div class="readmore-btn">
+      <a href="./service.php">
+        View
+      </a>
     </div>
   </section>
 
@@ -355,7 +274,7 @@
             <img style="margin-top:-50px;" src="./images/vision.png" alt="">
           </div>
           <div class="detail-box">
-            <h5>
+            <h5 style="color:white;">
               Our Vision
             </h5>
             <p>
@@ -377,217 +296,16 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          What Says Our Customers
+          What Our Customers Say
         </h2>
       </div>
-      <div id="carouselExample2Indicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExample2Indicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExample2Indicators" data-slide-to="1"></li>
-          <li data-target="#carouselExample2Indicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/client.png" alt="">
-              </div>
-              <div class="detail-box">
-                <i class="fas fa-user fa-2x"></i>
-                <h5>
-                  Fahad muhammed, <br>
-                  <div class=" address">
-                    <p>
-                      Kasaragod ( On Smart home automation for Residential projects)
-                    </p>
-                  </div>
-                </h5>
-                <p>
-                  The service was outstanding, the products appeared to be well-made, and the installation was handled
-                  by a competent and skilled expert. The installation itself was simple and did not obtrude on the
-                  aesthetics. For your home, I whole heartedly suggest Taut Secure.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/client.png" alt="">
-              </div>
-              <div class="detail-box">
-                <i class="fas fa-user fa-2x"></i>
-                <h5>
-                  Fairoz,
-                  <div class="address">
-                    <p>Bangalore (Aspirants Hub) </p>
-                  </div>
-                </h5>
-                <p>
-                  Taut secure exceeded my expectations with their services. Highly satisfied !
-
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/client.png" alt="">
-              </div>
-              <div class="detail-box">
-                <i class="fas fa-user fa-2x"></i>
-                <h5>
-                  Bilal Ahmed,
-                  <div class="address">
-                    <p>
-                      Bangalore (Study nest)
-                    </p>
-                  </div>
-                </h5>
-                <p>
-                  Great feeling to have made the right choice selecting Taut Secure Security Professionals for security
-                  system activated. I highly recommend.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php include('./components/clients.html'); ?>
 
     </div>
   </section>
 
 
-  <!-- <style>
-    .home-testimonial {
-      background-color: #f8f8f8;
-      height: 380px
-    }
 
-    .home-testimonial-bottom {
-      background-color: #f8f8f8;
-      transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-      margin-top: 20px;
-      margin-bottom: 0px;
-      position: relative;
-      height: 130px;
-      top: 190px
-    }
-
-    .home-testimonial h3 {
-      color: var(--orange);
-      font-size: 14px;
-      font-weight: 500;
-      text-transform: uppercase
-    }
-
-    .home-testimonial h2 {
-      color: black;
-      font-size: 28px;
-      font-weight: 700
-    }
-
-    .testimonial-inner {
-      position: relative;
-      top: -174px
-    }
-
-    .testimonial-pos {
-      position: relative;
-      top: 24px
-    }
-
-    .testimonial-inner .tour-desc {
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      background: white;
-      /* border: 1px solid red; */
-      border-radius: 10px;
-      padding: 40px
-    }
-
-    .color-grey-3 {
-      font-family: "Montserrat", Sans-serif;
-      font-size: 14px;
-      color: #6c83a2
-    }
-
-    .testimonial-inner img.tm-people {
-      width: 60px;
-      height: 60px;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      -o-object-fit: cover;
-      object-fit: cover;
-      max-width: none
-    }
-
-    .link-name {
-      font-family: "Montserrat", Sans-serif;
-      font-size: 14px;
-      color: black;
-    }
-
-    .link-position {
-      font-family: "Montserrat", Sans-serif;
-      font-size: 12px;
-      color: black;
-    }
-  </style> -->
-<!-- 
-  <section class="home-testimonial">
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center testimonial-pos">
-        <div class="heading_container">
-          <h2>
-            What Says Our Customers
-          </h2>
-        </div>
-      </div>
-      <section class="home-testimonial-bottom">
-        <div class="container testimonial-inner">
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-4 style-3">
-              <div class="tour-item ">
-                <div class="tour-desc">
-                  <div class="tour-text color-white text-center">&ldquo;Outstanding service, well-made products and expert installation.
-                    Seamless installation, skilled expert, excellent service, and impeccable product quality.&rdquo;</div>
-                  <div class="d-flex justify-content-center pt-2 pb-2"><i class="fas fa-user fa-2x"></i></div>
-                  <div class="link-name d-flex justify-content-center font-weight-bold">Fahad muhammed</div>
-                  <div class="link-position d-flex justify-content-center">Kasaragod ( On Smart home automation for Residential projects)</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 style-3">
-              <div class="tour-item ">
-                <div class="tour-desc ">
-                  <div class="tour-text color-white text-center">&ldquo;Taut Secure went above and beyond to deliver exceptional service, exceeding my expectations. I am extremely satisfied with their outstanding performance!&rdquo;</div>
-                  <div class="d-flex justify-content-center pt-2 pb-2">
-                  <img class="tm-people" src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg" alt=""> 
-                    <i class="fas fa-user fa-2x"></i>
-                  </div>
-                  <div class="link-name d-flex justify-content-center font-weight-bold">Fairoz</div>
-                  <div class="link-position d-flex justify-content-center">Bangalore (Aspirants Hub)</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 style-3">
-              <div class="tour-item ">
-                <div class="tour-desc">
-                  <div class="tour-text color-white text-center">&ldquo;Great feeling to have made the right choice selecting Taut Secure Security Professionals for security
-                    system activated. I highly recommend.&rdquo;</div>
-                  <div class="d-flex justify-content-center pt-2 pb-2"><i class="fas fa-user fa-2x"></i></div>
-                  <div class="link-name d-flex justify-content-center font-weight-bold">Avinash</div>
-                  <div class="link-position d-flex justify-content-center">Bangalore (Study nest)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-  </section> -->
-
-
-  <!-- end client section -->
 
 
 
@@ -595,53 +313,49 @@
 
   <!-- contact section -->
   <section class="contact_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          <span>
-            Get In Touch
-          </span>
-        </h2>
-      </div>
-      <div class="layout_padding2-top">
-        <div class="row">
-          <div class="col-md-6 ">
-            <form action="">
-              <div class="contact_form-container">
-                <div>
-                  <div>
-                    <input type="text" placeholder="Name" />
-                  </div>
-                  <div>
-                    <input type="email" placeholder="Email" />
-                  </div>
-                  <div>
-                    <input type="text" placeholder="Phone Number" />
-                  </div>
-                  <div class="mt-5">
-                    <input type="text" placeholder="Message" />
-                  </div>
-                  <div class="mt-5">
-                    <button type="submit">
-                      Send
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-6">
-            <div class="map_container">
-              <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124103.17331323466!2d74.8531526!3d12.9107676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x827bbc7a74fcfe64!2sMangaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1623168891846!5m2!1sen!2sin" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="heading_container">
+      <h2>
+        <span>
+          Get In Touch
+        </span>
+      </h2>
     </div>
+    <?php include './components/contact.html'; ?>
+
   </section>
   <!-- end contact section -->
+  <!-- brands section  -->
+
+  <section class="service_section ">
+    <div class="heading_container">
+      <h2>
+        Brands we deal with
+      </h2>
+    </div>
+    <?php include('./components/brands.html'); ?>
+  </section>
+  <!-- brands section end  -->
+
+
+  <!-- video section -->
+  <section class="contact_section layout_padding">
+    <div class="heading_container">
+      <h2>
+        <span>
+          Videos
+        </span>
+      </h2>
+    </div>
+    <?php include './components/video.html'; ?>
+    <div class="readmore-btn">
+<a href="#">
+            View More videos
+          </a>
+</div>
+  </section>
+  <!-- end video section -->
+
+  <!-- footer  -->
   <?php include 'footer.php'; ?>
 
 
@@ -659,7 +373,7 @@
     }
   </script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       var carousel = document.querySelector("#carouselExampleIndicators");
 
       var carouselOptions = {
@@ -670,6 +384,7 @@
       var carouselInstance = new bootstrap.Carousel(carousel, carouselOptions);
     });
   </script>
+  <script src="./main.js"></script>
 
 </body>
 

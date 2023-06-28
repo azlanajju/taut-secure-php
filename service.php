@@ -203,7 +203,7 @@ mysqli_close($conn);
               <li class="nav-item">
                 <a class="nav-link" href="service.php">
                   <i class="fa fa-map-marker"></i>
-                  <span> Mangalore </span>
+                  <span> Bangalore | Mangalore | Kasaragod </span>
                 </a>
               </li>
               <li class="nav-item">

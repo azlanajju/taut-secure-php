@@ -1,0 +1,175 @@
+  <style>
+    .card-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent; 
+    }
+
+    .card {
+      flex: 0 0 300px;
+      margin: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      height: 300px;
+    }
+    .card:hover{
+      transform: scale(1.05);
+      transition: 0.5s;
+    }
+    .card h2{
+      font-size: 20px;
+    }
+
+    .card-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-image {
+      width: 100%;
+      min-height: 250px;
+      max-height: 250px;
+      object-fit: cover;
+    }
+        /* Hide the scrollbar */
+        .card-container::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+
+    /* Optional: Ensure the container takes up the full height of its content */
+    .card-container::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+  </style>
+
+  <div class="card-container">
+    <div class="card">
+      <img class="card-image" src="./images/cctv.png" alt="Image 1">
+      <h2 class="card-title">CCTV Services</h2>
+
+    </div>
+
+    <div class="card">
+      <img class="card-image" src="./images/gate-barrier.jpg" alt="Image 3">
+      <h2 class="card-title">Gate Barrier System
+    </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/intrusion-alarm.png" alt="Image 4">
+      <h2 class="card-title">Intrusion Alarm System
+    </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/public-address.png" alt="Image 4">
+      <h2 class="card-title">Public Address System
+    </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/pos-billing.png" alt="Image 4">
+      <h2 class="card-title">POS & Billing  Machine
+    </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/home-automation.jpg" alt="Image 4">
+      <h2 class="card-title">Home  Automation    </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/conference-syst.png" alt="Image 4">
+      <h2 class="card-title">Conference System    </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/smart-class.png" alt="Image 4">
+      <h2 class="card-title">Smart Class System    </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/intrusion-alarm.png" alt="Image 4">
+      <h2 class="card-title">Nurse Calling System    </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/intrusion-alarm.png" alt="Image 4">
+      <h2 class="card-title"> GPS Tracking System    </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/intrusion-alarm.png" alt="Image 4">
+      <h2 class="card-title"> Disabled Alarm System    </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/intrusion-alarm.png" alt="Image 4">
+      <h2 class="card-title"> Automatic Sliding Gate</h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/intrusion-alarm.png" alt="Image 4">
+      <h2 class="card-title"> Audio Video Intercom </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/intrusion-alarm.png" alt="Image 4">
+      <h2 class="card-title"> IP Telephone </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/intrusion-alarm.png" alt="Image 4">
+      <h2 class="card-title"> Fire Alarm System </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/intrusion-alarm.png" alt="Image 4">
+      <h2 class="card-title"> Bollard System </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/gps-tracking.png" alt="Image 2">
+      <h2 class="card-title"><small>Access Control & Biometric System</small>
+    </h2>
+
+    </div>
+    <div class="card">
+      <img class="card-image" src="./images/intrusion-alarm.png" alt="Image 4">
+      <h2 class="card-title"> IT Services </h2>
+
+    </div>
+  </div>
+
+  <script>
+    let isScrolling = false;
+    let startX = 0;
+    let scrollLeft = 0;
+
+    function startScroll(event) {
+      isScrolling = true;
+      startX = event.clientX;
+      scrollLeft = document.querySelector('.card-container').scrollLeft;
+    }
+
+    function scrollCards(event) {
+      if (!isScrolling) return;
+      event.preventDefault();
+      const x = event.clientX;
+      const walk = (x - startX) * 2;
+      document.querySelector('.card-container').scrollLeft = scrollLeft - walk;
+    }
+
+    function stopScroll(event) {
+      isScrolling = false;
+    }
+
+    const cardContainer = document.querySelector('.card-container');
+    cardContainer.addEventListener('mousedown', startScroll);
+    cardContainer.addEventListener('mousemove', scrollCards);
+    cardContainer.addEventListener('mouseup', stopScroll);
+  </script>

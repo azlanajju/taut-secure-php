@@ -2,21 +2,7 @@
   <script src="https://kit.fontawesome.com/de7107c926.js" crossorigin="anonymous"></script>
 
   <section class="info_section layout_padding2-top">
-      <div class="container">
-          <div class="info_form">
-              <h4>
-                  Our Newsletter
-              </h4>
-              <form action="">
-                  <input type="text" placeholder="Enter your email">
-                  <div class="d-flex justify-content-end">
-                      <button>
-                          subscribe
-                      </button>
-                  </div>
-              </form>
-          </div>
-      </div>
+
       <div class="container">
           <div class="row">
               <div class="col-md-3">

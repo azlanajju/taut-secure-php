@@ -2,7 +2,7 @@
 
 
 // Create connection
-$conn = new mysqli("localhost", "root", "", "tautsecure");
+$conn = new mysqli("localhost", "root", "", "tautSecure");
 
 // Check connection
 if ($conn->connect_error) {

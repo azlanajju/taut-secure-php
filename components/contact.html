@@ -1,0 +1,236 @@
+<style>
+
+
+
+
+    .edge{
+        position: absolute;
+        top: 470px;
+        right: 270px;
+        width: 10px; 
+        height: 10px;
+        z-index: 1000;
+    }
+    
+.contact {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.contact .col-md-6 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact .col-md-6:first-child {
+    background: #333;
+    border: 1px solid #333;
+}
+
+.contact .col-md-6:last-child {
+    background: #333;
+}
+
+.contact .contact-info {
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.contact .contact-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    border: 1px solid white;
+    color: white;
+    background: #f0f0f0;
+}
+
+.contact .contact-item [class^="flaticon-"]::before {
+    margin: 0;
+    color: white;
+    font-size: 40px;
+}
+
+.contact .contact-text {
+    position: relative;
+    width: auto;
+    padding-left: 20px;
+}
+
+.contact .contact-text h2 {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact .contact-text p {
+    margin: 0;
+    color:red;
+    font-size: 16px;
+}
+
+.contact .contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact .contact-form {
+    position: relative;
+    padding: 0 15px;
+}
+
+.contact .contact-form input {
+    color: #ffffff;
+    height: 40px;
+    border-radius: 0;
+    border-width: 1px;
+    border-color: rgba(256, 256, 256, .4);
+    background: transparent;
+}
+
+.contact .contact-form textarea {
+    color: #ffffff;
+    height: 185px;
+    border-radius: 0;
+    border-width: 1px;
+    border-color: rgba(256, 256, 256, .4);
+    background: transparent;
+}
+
+.contact .contact-form input:focus,
+.contact .contact-form textarea {
+    box-shadow: none;
+}
+
+.contact .contact-form .form-control::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.contact .contact-form .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact .contact-form .form-control::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact .contact-form .btn {
+    padding: 16px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    transition: .3s;
+    
+}
+
+.contact .contact-form .btn:hover {
+    color: #fff;
+    background: red;
+}
+
+.contact .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+</style>
+
+
+    <head>
+
+
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+ 
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+
+
+            <!-- Contact Start -->
+            <div class="contact wow fadeInUp">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="flaticon-address"></i>
+                                    <div class="contact-text">
+                                        <h2>Location</h2>
+                                        <p>  Bangalore | Mangalore | Kasaragod</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="flaticon-call"></i>
+                                    <div class="contact-text">
+                                        <h2>Phone</h2>
+<p>+91 7337836586<br>
+</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="flaticon-send-mail"></i>
+                                    <div class="contact-text">
+                                        <h2>Email</h2>
+                                        <p> info@tautsecure.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                    <div class="control-group">
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input name="phone" type="tel" class="form-control" id="email" placeholder="Your Number" required="required" data-validation-required-message="Please enter your Number" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <textarea name="message" class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact End -->
+
+
+
+
