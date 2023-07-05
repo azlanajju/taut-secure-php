@@ -1,4 +1,6 @@
-
+body{
+    overflow-x: hidden;
+}
 .teams .carousel .card{
   
     background: #222;

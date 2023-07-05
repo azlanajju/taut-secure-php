@@ -12,9 +12,9 @@
     .custom-wrapper {
       display: flex;
       animation: slideCards 20s linear infinite;
-      overflow-x: scroll;
+      /* overflow-x: scroll;
       overflow-y: hidden;
-      padding: 30px;
+      padding: 30px; */
     }
 
     .custom-item {
@@ -46,6 +46,13 @@
       }
       100% {
         transform: translateX(-100%);
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      .custom-wrapper {
+        animation: slideCards 5s linear infinite;
       }
     }
   </style>
