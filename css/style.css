@@ -798,8 +798,17 @@ h5 {
 /* contact section */
 /* info section */
 .info_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
   background-color: #161616;
   color: #ffffff;
+}
+
+.foote {
+  /* border: 2px solid red; */
+  width: 80vw;
 }
 
 .info_section h6 {
