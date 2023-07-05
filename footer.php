@@ -13,11 +13,11 @@
                       Taut Secure is a security system company that specializes in providing a range of security products and services to protect individuals and organizations from various security threats.
                   </p>
               </div>
-              <div class="col-md-2 offset-md-1">
-                  <h6>
+              <div  class="col-md-2 offset-md-1">
+                  <!-- <h6>
                       Menus
-                  </h6>
-                  <ul>
+                  </h6> -->
+                  <ul style="width:100%;display:flex;flex-direction:column;align-items:center;">
                       <li class=" active">
                           <a class="" href="index.php">Home <span class="sr-only">(current)</span></a>
                       </li>
