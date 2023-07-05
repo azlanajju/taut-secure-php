@@ -32,7 +32,8 @@
     <style>
         .containers {
             display: flex;
-            height: 100vh;
+            min-height: calc(100vh - 100px);
+            /* Adjust the value based on your footer height */
         }
 
         .sideNav {
@@ -60,23 +61,14 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            /* justify-content: center; */
-            /* align-items: center; */
-            /* width: 60%; */
-            width: 800px;
+            width: 90%;
+            /* Adjust the width based on your requirements */
             margin: 0 auto;
             padding: 20px;
-            background: #f2f2f2;
+            background: #fff;
         }
-
-        /* .content {
-            display: none;
-        }
-
-        .content.active {
-            display: block;
-        } */
     </style>
+
 
 </head>
 
@@ -176,12 +168,32 @@
 
                     <div class="containers">
                         <div class="sideNav">
-                            <button id="button1" onclick="showContent('content1')">Button 1</button>
+                            <button id="button1" onclick="showContent('content1')">Banking & Finance</button>
                             <button id="button2" onclick="showContent('content2')">Button 2</button>
                             <button id="button2" onclick="showContent('content3')">Button 3</button>
                         </div>
                         <div class="contents">
-                            <div id="content1" class="content">op9089786f7d5r6set5hello basic thindjbchchjsvckgcvwlhc xz,</div>
+                            <div id="content1" class="content">
+
+                                <h4>Strengthening Financial Facilities with TautSecure's Banking Surveillance Solution</h4>
+                                TautSecure's Banking Surveillance Solution encompasses a suite of powerful and intelligent functionalities. These cutting-edge features are backed by advanced technology, enabling seamless integration of your financial facilities. Whether it's branch offices, service centers, or treasuries, TautSecure's centralized monitoring solution streamlines operations, making implementation, management, and integration a breeze.<br><br>
+
+                                <h4>Effective Surveillance of Bank Assets</h4>
+                                With TautSecure, you can ensure comprehensive and effective surveillance of your bank assets. By leveraging state-of-the-art technology, our solution provides real-time monitoring and alerts, enabling proactive risk management. Through advanced video analytics and intelligent algorithms, potential security breaches can be identified promptly, allowing for swift response and mitigation.<br><br>
+
+                                <h4>Enhanced Security for Clients and Personnel</h4>
+                                The safety of your clients and personnel is of utmost importance. TautSecure's surveillance solutions offer robust security measures to protect them. By implementing cutting-edge access control systems and biometric authentication, unauthorized access to restricted areas is mitigated. Our intelligent surveillance solution can accurately detect and alert for any suspicious activities, enabling proactive measures to ensure the utmost safety and security.<br><br>
+
+                                <h4>Securing ATM Areas with Unwavering Reliability</h4>
+                                ATMs are vital touchpoints for customers, and their security is crucial. TautSecure's surveillance solutions provide unwavering reliability in securing ATM areas. With advanced video analytics and real-time monitoring, any unusual or suspicious activities are detected promptly. This enables proactive measures to safeguard the integrity of ATM transactions and protect customers from potential threats such as skimming or card cloning.<br><br>
+
+                                <h4>Improving Accountability, Efficiency, and Customer Satisfaction</h4>
+                                Beyond enhancing security, TautSecure's surveillance solutions deliver a range of additional benefits that drive business success. By fostering accountability through comprehensive surveillance, businesses can mitigate internal fraud and maintain transparency. Moreover, the implementation of intelligent analytics helps identify process bottlenecks and optimize operations, leading to improved efficiency.<br><br>
+
+                                Additionally, TautSecure's surveillance solutions play a vital role in enhancing customer satisfaction. By providing a secure environment, customers feel confident in conducting their financial transactions. This fosters trust and loyalty, ultimately strengthening the bond between businesses and their clientele.<br><br>
+
+
+                            </div>
                             <div id="content2" class="content">Content 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, quasi quas repudiandae commodi laborum omnis officiis dolores fugit nulla doloremque dicta adipisci autem voluptatem voluptate ducimus earum impedit, iusto reiciendis minima, dolorem quidem voluptatum?</div>
                             <div id="content3" class="content">Content 3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sapiente repudiandae corrupti temporibus, sed sit eos, aspernatur sequi expedita facere doloribus mollitia cumque provident iusto nemo dicta ducimus nulla rerum beatae aliquid ea sint delectus similique! Ratione eos alias vitae cum debitis, natus modi voluptate!</div>
                         </div>
