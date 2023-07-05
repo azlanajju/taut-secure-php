@@ -99,10 +99,8 @@ mysqli_close($conn);
       padding: 0px 5px;
       border-radius: 3px;
     }
-
-
   </style>
-    <link rel="icon" type="image/png" href="./images/iconico.ico">
+  <link rel="icon" type="image/png" href="./images/iconico.ico">
 
 </head>
 
@@ -163,6 +161,9 @@ mysqli_close($conn);
                   </li>
                   <li class="nav-item ">
                     <a class="nav-link" href="service.php">Services </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./solutions.php">Solutions</a>
                   </li>
                   <li class="nav-item active">
                     <a class="nav-link " href="./projects.php">Projects </a>

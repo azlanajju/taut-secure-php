@@ -224,6 +224,9 @@ mysqli_close($conn);
                     <a class="nav-link">Services </a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="./solutions.php">Solutions</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="./projects.php">Projects </a>
                   </li>
                   <li class="nav-item">

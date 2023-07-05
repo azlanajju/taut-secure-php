@@ -112,14 +112,14 @@
   </div>
 
   <!-- contact section -->
-      <div class="heading_container">
-        <h2>
-          <span>
-            Get In Touch
-          </span>
-        </h2>
-      </div>
-      <?php include './components/contact.html'; ?>
+  <div class="heading_container">
+    <h2>
+      <span>
+        Get In Touch
+      </span>
+    </h2>
+  </div>
+  <?php include './components/contact.html'; ?>
 
 
   <?php include 'footer.php'; ?>
