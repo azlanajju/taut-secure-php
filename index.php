@@ -13,15 +13,13 @@
   <title>Taut Secure</title>
 
   <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
@@ -75,8 +73,7 @@
       <div class="container">
         <div class="custom_nav2">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -91,6 +88,9 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./service.php">Services </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./solutions.php">Solutions</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./projects.php">Projects </a>
@@ -348,10 +348,10 @@
     </div>
     <?php include './components/video.html'; ?>
     <div class="readmore-btn">
-<a href="#">
-            View More videos
-          </a>
-</div>
+      <a href="#">
+        View More videos
+      </a>
+    </div>
   </section>
   <!-- end video section -->
 
@@ -373,7 +373,7 @@
     }
   </script>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       var carousel = document.querySelector("#carouselExampleIndicators");
 
       var carouselOptions = {

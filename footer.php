@@ -28,6 +28,9 @@
                           <a class="" href="service.php">Services </a>
                       </li>
                       <li class="">
+                          <a class="" href="./solutions.php">Solutions</a>
+                      </li>
+                      <li class="">
                           <a class="" href="contact.php">Contact Us</a>
                       </li>
                   </ul>

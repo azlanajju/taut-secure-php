@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taut secure</title>
+    <style>
+        .container {
+            display: inline;
+        }
+
+        .sideNav {
+            width: 20%;
+            min-width: 220px;
+            height: 100vh;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sideNav button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: transparent;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contents {
+            flex: 1;
+            width: 60%;
+            padding: 20px;
+            background: #f2f2f2;
+            min-height: 100vh;
+        }
+
+        .content {
+            display: none;
+        }
+    </style>
+    s
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="sideNav">
+            <button id="button1" onclick="showContent('content1')">Button 1</button>
+            <button id="button2" onclick="showContent('content2')">Button 2</button>
+            <button id="button2" onclick="showContent('content3')">Button 3</button>
+
+        </div>
+
+        <div class="contents">
+            <div id="content1" class="content">Content 1</div>
+            <div id="content2" class="content">Content 2</div>
+            <div id="content3" class="content">Content 3</div>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    function showContent(contentId) {
+        var contents = document.getElementsByClassName("content");
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].style.display = "none";
+        }
+
+        var contentToShow = document.getElementById(contentId);
+        contentToShow.style.display = "block";
+    }
+
+</script>
+
+</html>
