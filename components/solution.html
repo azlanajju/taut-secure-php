@@ -1,0 +1,126 @@
+
+    <style>
+        .whole-container{
+            border: 2px solid yellow;
+            width: 100vw;
+            display: flex;
+        }
+        .slide-container{
+            border: 2px solid red;
+            margin: 10px;
+            display: inline-block;
+            height: 30px;
+
+        }
+      .slide {
+        display: inline-block;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            text-align: center;
+            transition: height 0.4s ease;
+        }
+
+        .slide li {
+            padding: 30px;
+            text-decoration: none;
+        }
+
+        .box {
+            height: 300px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .box1 {
+            background-color: #f2f2f2;
+        }
+
+        .box2 {
+            background-color: #e5e5e5;
+        }
+
+        .box3 {
+            background-color: #d8d8d8;
+        }
+
+        .box4 {
+            background-color: #cccccc;
+        }
+
+        .box5 {
+            background-color: #bfbfbf;
+        }
+
+        .sidenaa {
+            height: 300px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    </style>
+
+<div class="whole-container">
+    <div id="slide-container" class="slide-container container0 ">
+        <span onclick="toggleSlide(1)">Computer Science Engineering</span>
+        <ul id="slide1" class="slide ">
+          <li><a href="cse/3rdsem.html">Semester 3</a></li>
+          <li><a href="#">Semester 4</a></li>
+          <li><a href="#">Semester 5</a></li>
+          <li><a href="#">Semester 6</a></li>
+          <li><a href="#">Semester 7</a></li>
+          <li><a href="#">Semester 8</a></li>
+        </ul>
+      </div>
+      <div id="slide-container" class="slide-container container1">
+        <span onclick="toggleSlide(2)">Computer Science Engineering</span>
+        <ul id="slide2" class="slide">
+          <li><a href="cse/3rdsem.html">Semester 3</a></li>
+          <li><a href="#">Semester 4</a></li>
+          <li><a href="#">Semester 5</a></li>
+          <li><a href="#">Semester 6</a></li>
+          <li><a href="#">Semester 7</a></li>
+          <li><a href="#">Semester 8</a></li>
+        </ul>
+      </div>
+      <div id="slide-container" class="slide-container container2">
+        <span onclick="toggleSlide(3)">Computer Science Engineering</span>
+        <ul id="slide3" class="slide">
+          <li><a href="cse/3rdsem.html">Semester 3</a></li>
+          <li><a href="#">Semester 4</a></li>
+          <li><a href="#">Semester 5</a></li>
+          <li><a href="#">Semester 6</a></li>
+          <li><a href="#">Semester 7</a></li>
+          <li><a href="#">Semester 8</a></li>
+        </ul>
+      </div>
+      <div id="slide-container" class="slide-container container3">
+        <span onclick="toggleSlide(4)">Computer Science Engineering</span>
+        <ul id="slide4" class="slide">
+          <li><a href="cse/3rdsem.html">Semester 3</a></li>
+          <li><a href="#">Semester 4</a></li>
+          <li><a href="#">Semester 5</a></li>
+          <li><a href="#">Semester 6</a></li>
+          <li><a href="#">Semester 7</a></li>
+          <li><a href="#">Semester 8</a></li>
+        </ul>
+      </div>
+      <div id="slide-container" class="slide-container container4">
+        <span onclick="toggleSlide(5)">Computer Science Engineering</span>
+        <ul id="slide5" class="slide">
+          <li><a href="cse/3rdsem.html">Semester 3</a></li>
+          <li><a href="#">Semester 4</a></li>
+          <li><a href="#">Semester 5</a></li>
+          <li><a href="#">Semester 6</a></li>
+          <li><a href="#">Semester 7</a></li>
+          <li><a href="#">Semester 8</a></li>
+        </ul>
+      </div>
+</div>
+<script>
+    function toggleSlide(slideId) {
+        const slide = document.getElementById(`slide${slideId}`);
+        slide.classList.toggle("sidenaa");
+        var slideContainer = document.getElementById('slide-container').style.height= "300px";
+    }
+</script>
+
