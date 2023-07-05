@@ -115,9 +115,12 @@
 
 
                   <div class="d-flex justify-content-start mt-4">
-                      <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px; color:red;" href="#"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px; color:red;" href="https://twitter.com/taut_secure"><i class="fab fa-twitter"></i></a>
+
                       <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;color:red;" href="#"><i class="fab fa-facebook-f"></i></a>
-                      <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;color:red;" href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                      <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;color:red;" href="https://www.linkedin.com/in/taut-secure-b10818280"><i class="fab fa-linkedin-in"></i></a>
+
                       <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;color:red;" href="#"><i class="fab fa-instagram"></i></a>
                   </div>
               </div>
