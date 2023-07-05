@@ -78,6 +78,18 @@
         .contents:active {
             display: block;
         } */
+
+        @media (max-width: 768px) {
+            .sideNav{
+                width: 100vw;
+            }
+            .contents {
+                font-size: 15px;
+        }
+        .containers{
+        flex-direction: column;
+        }
+    }
     </style>
 
 
