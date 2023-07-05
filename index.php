@@ -211,7 +211,7 @@
 
   <!-- about section -->
 
-  <section class="about_section ">
+  <section class="about_section">
     <div class="container">
       <div class="heading_container">
         <h2>
