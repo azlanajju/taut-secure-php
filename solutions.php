@@ -37,6 +37,7 @@
         }
 
         .sideNav {
+            font-weight: bold;
             width: 20%;
             min-width: 220px;
             background: transparent;
@@ -48,7 +49,7 @@
         .sideNav button {
             display: block;
             width: 100%;
-            padding: 10px;
+            padding: 10px 20px;
             margin-bottom: 10px;
             background: red;
             color: #fff;
@@ -67,6 +68,14 @@
             padding: 20px;
             background: #fff;
         }
+
+        /* .contents {
+            display: none;
+        }
+
+        .contents:active {
+            display: block;
+        } */
     </style>
 
 
@@ -124,13 +133,13 @@
                                     <li class="nav-item ">
                                         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                                     </li>
-                                    <li class="nav-item active">
+                                    <li class="nav-item">
                                         <a class="nav-link" href="about.php">About </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="./service.php">Services </a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item active">
                                         <a class="nav-link" href="./solutions.php">Solutions</a>
                                     </li>
                                     <li class="nav-item">
@@ -169,8 +178,8 @@
                     <div class="containers">
                         <div class="sideNav">
                             <button id="button1" onclick="showContent('content1')">Banking & Finance</button>
-                            <button id="button2" onclick="showContent('content2')">Button 2</button>
-                            <button id="button2" onclick="showContent('content3')">Button 3</button>
+                            <button id="button2" onclick="showContent('content2')">Parking Solutions</button>
+                            <button id="button2" onclick="showContent('content3')">Education</button>
                         </div>
                         <div class="contents">
                             <div id="content1" class="content">
@@ -194,8 +203,50 @@
 
 
                             </div>
-                            <div id="content2" class="content">Content 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, quasi quas repudiandae commodi laborum omnis officiis dolores fugit nulla doloremque dicta adipisci autem voluptatem voluptate ducimus earum impedit, iusto reiciendis minima, dolorem quidem voluptatum?</div>
-                            <div id="content3" class="content">Content 3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sapiente repudiandae corrupti temporibus, sed sit eos, aspernatur sequi expedita facere doloribus mollitia cumque provident iusto nemo dicta ducimus nulla rerum beatae aliquid ea sint delectus similique! Ratione eos alias vitae cum debitis, natus modi voluptate!</div>
+                            <div id="content2" class="content">
+                                <h5><b>The Benefits of Smart Parking Solutions for Enhanced User Experience</b></h5>
+                                In today's fast-paced world, finding an available parking space quickly is crucial, as it can save us valuable time. Additionally, outdated paper ticketing systems often lead to congestion, with drivers queuing to enter and exit parking lots. To address these challenges effectively, it is imperative for organizations such as retail companies, private businesses, and public authorities to consider implementing smart parking solutions. These innovative technologies, including intelligent parking guidance and smart entrance/exit control systems, not only facilitate efficient and seamless parking experiences but also enhance user satisfaction.<br><br>
+
+                                <h4>Streamlined Parking Process with Intelligent Guidance</h4>
+                                One of the key advantages of smart parking solutions is their ability to optimize the parking process. By leveraging intelligent parking guidance systems, parking businesses can ensure a smooth flow of vehicles at all times. These systems utilize real-time data and advanced algorithms to guide drivers to available parking spaces quickly and effortlessly. By eliminating the need for drivers to search aimlessly for parking, these solutions greatly reduce the time and frustration associated with finding a suitable spot.<br><br>
+
+                                <h4>Efficient Entrance and Exit Control</h4>
+                                Traditional parking facilities often experience bottlenecks and congestion during peak hours, leading to delays and inconvenience for customers. However, with smart entrance/exit control mechanisms in place, these issues can be mitigated effectively. Automated barriers play a vital role in maintaining a steady flow of vehicles through parking lots, ensuring a hassle-free experience for customers. By replacing manual ticketing systems with electronic payment methods and license plate recognition technology, smart parking solutions eliminate the need for physical tickets and reduce waiting times significantly.<br><br>
+
+                                <h4>Enhanced User Experience through Flexibility</h4>
+                                To provide the utmost convenience to customers, parking businesses must prioritize flexibility. Smart parking solutions offer various features that cater to this need. For instance, advanced parking management systems allow users to reserve parking spaces in advance, guaranteeing their availability upon arrival. This feature is particularly beneficial in high-demand areas or during special events when parking availability is limited. By offering such flexibility, parking businesses can enhance customer satisfaction and loyalty.<br><br>
+
+                                <h4>Quick and Simple Parking Space Locating</h4>
+                                Locating an available parking space within a crowded parking facility can be a time-consuming and frustrating task. Smart parking solutions address this issue by providing users with real-time information on parking availability. By integrating sensor technologies and data analytics, these systems can accurately determine the occupancy status of each parking spot. Users can conveniently access this information through mobile applications or digital signage, enabling them to identify and navigate to vacant spaces with ease.<br><br>
+
+                                <h4>Improving Overall Traffic Flow</h4>
+                                By implementing smart parking solutions, organizations contribute to the improvement of overall traffic flow in urban areas. Efficient parking systems minimize the time spent searching for parking spaces, reducing the number of vehicles circling the streets. Consequently, this leads to decreased traffic congestion, improved air quality, and a more sustainable urban environment. Furthermore, when drivers are aware of parking availability in advance, they can plan their routes accordingly, optimizing the efficiency of their journeys.<br><br>
+                            </div>
+                            <div id="content3" class="content">
+                                <h4>Enhancing Campus Safety and Security with Tautsecure's Innovative Solutions</h4>
+
+                                As an educational institution, ensuring the safety and security of your campus is of utmost importance. With the increasing prevalence of internal and external threats, it is crucial to implement robust security measures. Tautsecure offers cutting-edge technology solutions that not only deter threats but also foster a positive and secure environment. Let's explore how Tautsecure can revolutionize campus safety.<br><br>
+
+                                <h4>Securing Entrances, Lobbies, and Offices</h4>
+
+                                One key area that requires heightened security is the entrances, lobbies, and offices of educational campuses. Tautsecure's advanced security solutions provide comprehensive coverage in these critical zones. By leveraging state-of-the-art technology and high-definition clarity, Tautsecure equips school systems with the tools necessary to monitor activities and assets effectively. With real-time monitoring, school resource officers can identify and address potential threats promptly.<br><br>
+
+                                <h4>Safeguarding Hallways, Corridors, and Classrooms</h4>
+
+                                The hallways, corridors, and classrooms are the lifelines of any educational institution. Tautsecure understands the significance of securing these spaces. By implementing their innovative security products, schools can significantly reduce incidents of theft, vandalism, and violence. Tautsecure's intelligent learning technology and analytics enable proactive response capabilities, ensuring district-wide situational awareness. This comprehensive approach aids in preventing and effectively managing disaster situations.<br><br>
+
+                                <h4>Ensuring Safety in Sporting Arenas/Stadiums</h4>
+
+                                Sporting arenas and stadiums bring communities together, but they also require heightened security measures. Tautsecure's security solutions extend to these spaces, creating a safe environment for students, staff, and spectators. By deploying cutting-edge technology, such as surveillance cameras and access control systems, Tautsecure enables efficient monitoring and threat detection. This proactive approach mitigates risks and ensures the overall safety of everyone present.<br><br>
+
+                                <h4>Protecting Parking Lots and School Buses</h4>
+
+                                Parking lots and school buses are areas prone to security breaches. To combat this, Tautsecure offers innovative solutions tailored to these specific environments. By employing surveillance cameras and license plate recognition technology, Tautsecure enables efficient monitoring and tracking of vehicles. This not only deters potential threats but also aids in asset management and ensures the safety of students during transit.<br><br>
+
+                                <h4>Fortifying Libraries and Gyms</h4>
+
+                                Libraries and gyms serve as hubs for learning and physical fitness. Tautsecure recognizes the need to secure these spaces effectively. By integrating their advanced security solutions, schools can maintain a safe and conducive environment for students and staff. With real-time monitoring and intelligent analytics, Tautsecure's technology empowers educational institutions to proactively address any potential risks or threats, fostering a secure atmosphere for all.<br><br>
+                            </div>
                         </div>
                     </div>
 
@@ -219,6 +270,10 @@
                 .querySelector(".custom_menu-btn")
                 .classList.toggle("menu_btn-style");
         }
+        window.addEventListener('load', function() {
+            // Show only Content 1 by default
+            showContent('content1');
+        });
 
         function showContent(contentId) {
             var contents = document.getElementsByClassName("content");
