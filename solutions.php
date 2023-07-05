@@ -49,6 +49,7 @@
         .sideNav button {
             display: block;
             width: 100%;
+            height: 80px;
             padding: 10px 20px;
             margin-bottom: 10px;
             background: red;
@@ -56,6 +57,7 @@
             border: none;
             cursor: pointer;
             transition: background 0.3s;
+            border-radius: 10px;
         }
 
         .contents {

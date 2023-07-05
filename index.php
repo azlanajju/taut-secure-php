@@ -214,7 +214,7 @@
   <section class="about_section">
     <div class="container">
       <div class="heading_container">
-        <h2>
+        <h2  style="margin-top:30px;">
           About Taut Secure
         </h2>
       </div>
