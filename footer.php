@@ -4,39 +4,39 @@
   <section class="info_section layout_padding2-top">
       <div class="foote">
 
-      <div class="container">
-          <div class="row">
-              <div class="col-md-3">
-                  <h6>
-                      About Taut Secure
-                  </h6>
-                  <p>
-                      Taut Secure is a security system company that specializes in providing a range of security products and services to protect individuals and organizations from various security threats.
-                  </p>
-              </div>
-              <div class="col-md-2 offset-md-1">
-                  <h6>
-                      Menus
-                  </h6>
-                  <ul>
-                      <li class=" active">
-                          <a class="" href="index.php">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="">
-                          <a class="" href="about.php">About </a>
-                      </li>
-                      <li class="">
-                          <a class="" href="service.php">Services </a>
-                      </li>
-                      <li class="">
-                          <a class="" href="./solutions.php">Solutions</a>
-                      </li>
-                      <li class="">
-                          <a class="" href="contact.php">Contact Us</a>
-                      </li>
-                  </ul>
-              </div>
-              <!-- <div class="col-md-3">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3">
+                      <h6>
+                          About Taut Secure
+                      </h6>
+                      <p>
+                          Taut Secure is a security system company that specializes in providing a range of security products and services to protect individuals and organizations from various security threats.
+                      </p>
+                  </div>
+                  <div class="col-md-2 offset-md-1">
+                      <h6>
+                          Menus
+                      </h6>
+                      <ul>
+                          <li class=" active">
+                              <a class="" href="index.php">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="">
+                              <a class="" href="about.php">About </a>
+                          </li>
+                          <li class="">
+                              <a class="" href="service.php">Services </a>
+                          </li>
+                          <li class="">
+                              <a class="" href="./solutions.php">Solutions</a>
+                          </li>
+                          <li class="">
+                              <a class="" href="contact.php">Contact Us</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- <div class="col-md-3">
                   <h6>
                       Useful Links
                   </h6>
