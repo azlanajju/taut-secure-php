@@ -20,7 +20,7 @@ if (mysqli_num_rows($result) > 0) {
 
     // Concatenate the feature box with the fetched data
     $card = '
-    <div class="col-sm-6 col-lg-4">
+    <div class="">
       <div class="feature-box-1">
       <div class="icon">
       <img src="./admin/img/' . $image . '" alt="failed" >
@@ -77,11 +77,18 @@ mysqli_close($conn);
   <style>
     /* Feature Box
 ---------------------*/
+
+.feature_container{
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+
+}
     .feature-box-1 {
       padding: 32px;
       box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
       margin: 15px 0;
-      position: relative;
+      /* position: relative; */
       z-index: 1;
       border-radius: 10px;
       overflow: hidden;
@@ -90,19 +97,13 @@ mysqli_close($conn);
       -webkit-transition: ease all 0.35s;
       transition: ease all 0.35s;
       top: 0;
-      width: 70vw;
+      width: 90vw;
       text-align: center;
-      margin-left: 50px;
 
 
     }
 
-    .feature-box-1 * {
-      -moz-transition: ease all 0.35s;
-      -o-transition: ease all 0.35s;
-      -webkit-transition: ease all 0.35s;
-      transition: ease all 0.35s;
-    }
+
 
     .feature-box-1 .icon {
       line-height: 70px;
@@ -116,6 +117,10 @@ mysqli_close($conn);
 
     .feature-box-1 .icon img {
       height: 350px;
+      max-width: 90vw;
+      object-fit: cover;
+
+      
     }
 
     .feature-box-1 h5 {
@@ -125,24 +130,9 @@ mysqli_close($conn);
 
     .feature-box-1 p {
       margin: 0;
+      text-align: justify;
     }
 
-    .feature-box-1:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: auto;
-      right: 0;
-      border-radius: 10px;
-      width: 0;
-      background: red;
-      z-index: -1;
-      -moz-transition: ease all 0.35s;
-      -o-transition: ease all 0.35s;
-      -webkit-transition: ease all 0.35s;
-      transition: ease all 0.35s;
-    }
 
     .section {
       padding: 100px 0;
@@ -160,6 +150,13 @@ mysqli_close($conn);
       margin: 0 0 15px;
       border-left: 5px solid #fc5356;
       padding-left: 15px;
+    }
+    @media (max-width: 768px) {
+.feature-box-1{
+  width: 90vw;
+  margin: 0;
+  margin-left: -10px;
+}
     }
   </style>
   <link rel="icon" type="image/png" href="./images/iconico.ico">
@@ -246,14 +243,15 @@ mysqli_close($conn);
 
   <!-- service section -->
 
-  <section class="service_section layout_padding">
-    <div class="container">
+  <section class="service_section ">
       <div class="heading_container">
         <h2>
           Our Services
         </h2>
       </div>
+      <div class="feature_container">
       <?php echo $cards ?>
+      </div>
   </section>
 
   <!-- end service section -->

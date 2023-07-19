@@ -25,12 +25,26 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="./newStyle.css">
-  <style>
 
-  </style>
+
+
+  <!-- testimonial libraries   -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<link href="./components/testimonial/lib/animate/animate.min.css" rel="stylesheet">
+<link href="./components/testimonial/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="./components/testimonial/lib/tempusdominus/css/tempusdominus-bootstrap-4.css" rel="stylesheet" />
+
+<link href="./components/testimonial/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="./components/testimonial/css/style.css" rel="stylesheet">
+
+<!-- testtimonial lib end  -->
 </head>
 
-<body>
+<body style="max-width:100vw;">
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -110,12 +124,7 @@
 
       
       <div class="slider_container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
+
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="container">
@@ -174,38 +183,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item ">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-6 col-md-7 offset-md-6 offset-md-5">
-                    <div class="detail-box">
-                      <h1>
-                        TAUT SECURE
-                      </h1>
-                      <h2>
-                        Protecting what matters the most
-                      </h2>
-                      <p>
-                        We work closely with our clients to assess their security needs and design customized security
-                        systems that fit their requirements and budget. With the increasing demand for advanced security
-                        solutions, security system companies have become essential in safeguarding properties, assets,
-                        and people from potential threats
-                      </p>
-                      <div class="btn-box">
-                        <a href="about.php" class="btn-1">
-                          Read More
-                        </a>
-                        <a href="contact.php" class="btn-2">
-                          Get A Quote
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
       </div>
     </section>
     <!-- end slider section -->
@@ -295,17 +273,18 @@
 
   <!-- client section -->
 
-  <section class="client_section layout_padding">
+  <section class="">
     <div class="container">
       <div class="heading_container">
         <h2>
           What Our Customers Say
         </h2>
       </div>
-      <?php include('./components/clients.html'); ?>
+      <?php include('./components/testimonial/index.html'); ?>
 
     </div>
   </section>
+  <!-- client section end / -->
 
 
 
@@ -380,7 +359,7 @@
       var carousel = document.querySelector("#carouselExampleIndicators");
 
       var carouselOptions = {
-        interval: 3000,
+        interval: 5000,
         pause: "hover"
       };
 
@@ -389,6 +368,14 @@
   </script>
   <script src="./main.js"></script>
 
+
+  <!-- testimonial script  -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./components/testimonial/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./components/testimonial/js/main.js"></script> 
+
+    <!-- testimonial script end 
 </body>
 
 </html>
